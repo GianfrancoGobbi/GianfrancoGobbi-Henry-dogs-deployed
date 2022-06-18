@@ -5,7 +5,7 @@ export const GET_ALL_TEMPERAMENTS = 'GET_ALL_TEMPERAMENTS';
 
 export const getAllDogs = () => {
   return async dispatch => {
-    return fetch('http://localhost:3001/breeds')
+    return fetch('https://hr-dogs-app.herokuapp.com/breeds')
       .then((response) => response.json())
       .then((dogs) => {
         dispatch({
@@ -18,7 +18,7 @@ export const getAllDogs = () => {
 
 export const getDog = (id) => {
   return async dispatch => {
-    return fetch(`http://localhost:3001/dogs/${id}`)
+    return fetch(`https://hr-dogs-app.herokuapp.com/${id}`)
       .then((response) => response.json())
       .then((dog) => {
         dispatch({
@@ -31,7 +31,7 @@ export const getDog = (id) => {
 
 export function createDog(input) {
   return async function () {
-    fetch("http://localhost:3001/breed", {
+    fetch("https://hr-dogs-app.herokuapp.com/breed", {
       method: "POST",
       body: JSON.stringify(input),
       headers: {
@@ -44,7 +44,7 @@ export function createDog(input) {
 
 export const getAllTemperaments = () => {
   return async dispatch => {
-    return fetch('http://localhost:3001/temps')
+    return fetch('https://hr-dogs-app.herokuapp.com/temps')
       .then((response) => response.json())
       .then((temperaments) => {
         dispatch({
