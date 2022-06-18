@@ -1,0 +1,53 @@
+.landing {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #9ecace;
+    cursor: url('pelota-01.png'), auto;
+    transition: 1s ease-in-out;
+}
+
+.landing-title {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: fantasy;
+    top: 100px;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.252);
+}
+
+.landing-subtitle {
+    position: absolute;
+
+    color: #ffffff;
+
+    top: 170px;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.224);
+}
+
+.img-landing {
+    display: flex;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-image: url("perro-01.png");
+}
+
+.img-landing:hover {
+    background-image: url("perro.gif");
+    cursor: url('pelota-01.png'), auto;
+    transition: 1s ease-in-out;
+}
+
+.contenedorpelota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}

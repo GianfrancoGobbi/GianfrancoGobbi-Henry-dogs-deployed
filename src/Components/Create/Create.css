@@ -1,0 +1,144 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.input-create {
+    height: 20px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    margin: 10px;
+    margin-top: 0px;
+
+    text-align: center;
+    width: 200px;
+}
+
+.input-temperaments {
+    width: 100%;
+    border-radius: 8px;
+    border-color: #ffffff;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+.contenedor-temperaments {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.label-temperament {
+    margin: 3px;
+    width: 120px;
+    height: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #00000011;
+    border-color: #9ecace00;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+}
+
+.label-temperament:hover {
+    background-color: #9ecace;
+    border-color: #9ecace;
+    color: white;
+    transition: 0ms;
+}
+
+.label-temperament2 {
+    margin: 3px;
+    width: 120px;
+    height: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #ffffff;
+    background-color: #9ecace;
+    border-color: #9ecace;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+}
+
+.caja-label {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contenedor-inputs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.boton-crear {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 50px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    background-color: #9ecace;
+    color: #ffffff;
+    font-family: fantasy;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.252);
+    transition: 1s;
+    animation: pulse 1s infinite;
+}
+
+.error {
+    color: red;
+    position: relative;
+    transition: ease;
+    transition: 1s;
+    width: 210px;
+    height: 0px;
+    margin-top: -10px;
+    font-size: 0.8rem;
+   
+  }
+
+@keyframes pulse {
+    0% {
+        color: #000000;
+    }
+
+    50% {
+        color: #ffffff;
+    }
+
+    100% {
+        color: #000000;
+    }
+}

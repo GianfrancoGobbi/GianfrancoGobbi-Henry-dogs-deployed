@@ -1,0 +1,54 @@
+.home{
+    /* background-color: #d2a17b81; */
+    height: 100vh;
+  
+}
+.cards{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 1s;
+    margin-bottom: 30px;
+}
+
+.home-ordenelementos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.home-filtros{
+  margin: 20px;
+  background-color:#9ecace ;
+  border-radius: 8px;
+}
+
+.home-btn{
+    background-color: #9ecace00;
+    border-color: #9ecace00;
+    color: white;
+}
+
+.home-btn:hover{
+    background-color: #77b9bf;
+
+
+}
+
+.home-paginado{
+    margin: 20px;
+    background-color:#9ecace ;
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .input-buscador{
+      border-radius: 0 0 8px 8px;
+      border-color: #ffffff;
+      text-align: center;
+  }

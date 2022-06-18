@@ -1,0 +1,26 @@
+/* nav style */
+.nav {
+    margin: 0px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+    background-color: #9ecace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-title {
+    font-family: fantasy;
+    font-size: 1.5rem;
+    }
+
+.navlink{
+    text-decoration: underline;
+     color: black;
+    font-family: fantasy;
+  text-decoration-color: #9ecace;
+ font-size: 1.5rem;
+}
