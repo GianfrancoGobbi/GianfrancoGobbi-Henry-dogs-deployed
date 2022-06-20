@@ -14,7 +14,7 @@ export function Card({ name, image, id, weight, height, temperament }) {
         </div>
       </NavLink>
       {/* <h3>{height}</h3> */}
-      <h3 className="card-weight">{weight} kilos</h3>
+      <h3 className="card-weight">Weight {weight}</h3>
       <h3 className="card-temperament">{temperament}</h3>
 
     </div>

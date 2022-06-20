@@ -13,14 +13,14 @@
 }
 
 .nav-title {
-    font-family: fantasy;
+    font-family: Impact;
     font-size: 1.5rem;
     }
 
 .navlink{
     text-decoration: underline;
      color: black;
-    font-family: fantasy;
+    font-family: Impact;
   text-decoration-color: #9ecace;
  font-size: 1.5rem;
 }

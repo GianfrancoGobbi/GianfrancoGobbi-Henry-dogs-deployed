@@ -181,7 +181,7 @@ export function Home() {
   return (
     <div className="home">
       <Nav />
-      <div >
+      <div className="div-contenedor-home">
         <div className="home-ordenelementos">
 
           <div className="home-filtros">
@@ -204,24 +204,27 @@ export function Home() {
             </select>
           </div>
 
+          <div className="home-filtros-mostrar-ordenar">
+            <div className="home-filtros">
+              <div>Ordenar X</div>
+              <button className='home-btn' onClick={AZ}>Nombre</button>
+              <button className='home-btn' onClick={PESO}>Peso</button>
+            </div>
 
-          <div className="home-filtros">
-            <div>Ordenar X</div>
-            <button className='home-btn' onClick={AZ}>Nombre</button>
-            <button className='home-btn' onClick={PESO}>Peso</button>
+            <div className="home-filtros">
+              <div>Mostrar</div>
+              <input
+                className="input-buscador"
+                value={elemento}
+                onChange={elementosx}
+                typeof="number"
+                type={"number"}
+                placeholder="8"
+              />
+            </div>
           </div>
 
-          <div className="home-filtros">
-            <div>Mostrar</div>
-            <input
-              className="input-buscador"
-              value={elemento}
-              onChange={elementosx}
-              typeof="number"
-              type={"number"}
-              placeholder="8"
-            />
-          </div>
+
         </div>
 
 

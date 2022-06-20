@@ -23,7 +23,7 @@ export const getDog = (id) => {
       .then((dog) => {
         dispatch({
           type: 'GET_DOG',
-          payload: dog
+          payload: dog,
         })
       })
   }

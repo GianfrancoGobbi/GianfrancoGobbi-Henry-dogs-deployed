@@ -142,3 +142,23 @@
         color: #000000;
     }
 }
+
+@media (max-width: 575px) {
+    .form{
+        margin-top: -15px;
+    }
+    .caja-label {
+        margin-bottom: 10px;
+    }
+    .contenedor-inputs{
+        margin-bottom: 10px;
+    }
+    .label-temperament{
+        width: auto;
+    }
+  
+.contenedor-temperaments{
+ justify-content: center;
+
+}
+}

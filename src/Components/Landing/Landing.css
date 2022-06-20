@@ -51,3 +51,15 @@
     justify-content: center;
     margin: auto;
 }
+
+
+@media (max-width: 575px) {
+ .img-landing {
+    background-image: url("perro.gif");
+    background-position-x: -50px;
+     }
+     .contenedorpelota {
+        width: 100vw;
+        overflow: hidden;
+     }
+}
