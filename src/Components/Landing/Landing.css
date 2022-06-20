@@ -52,7 +52,6 @@
     margin: auto;
 }
 
-
 @media (max-width: 575px) {
  .img-landing {
     background-image: url("perro.gif");
