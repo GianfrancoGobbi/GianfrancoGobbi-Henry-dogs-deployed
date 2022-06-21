@@ -13,11 +13,14 @@ export function Create() {
 
   useEffect(() => {
     dispatch(getAllTemperaments());
+    dispatch(getAllDogs());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [errors, setErrors] = useState({});
   const allTemperaments = useSelector(state => state.temperaments)
+  const allDogs = useSelector(state => state.dogs)
+  const randomdog = allDogs[Math.floor(Math.random() * allDogs.length)]
   const [botoncrear, setBotoncrear] = useState("CREAR PERRO")
   const [input, setInput] = useState({
     name: "",
@@ -27,7 +30,7 @@ export function Create() {
     heightmax: "",
     life_span: "",
     temperaments: [],
-    image: { url: "https://s1.eestatic.com/2020/09/11/omicrono/hardware/tecnologia-hardware-robotica_519959775_159687150_1706x960.jpg" }
+    image: { url: randomdog.image.url }
   })
 
   const handleInputChange = (event) => {
