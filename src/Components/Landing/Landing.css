@@ -16,7 +16,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
-    font-family: fantasy;
+    font-family: Impact;
     top: 100px;
     text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.252);
 }
@@ -52,6 +52,7 @@
     margin: auto;
 }
 
+
 @media (max-width: 575px) {
  .img-landing {
     background-image: url("perro.gif");
@@ -61,4 +62,9 @@
         width: 100vw;
         overflow: hidden;
      }
+}
+
+@font-face {
+    font-family: Impact;
+    src: url('../../../public/IMPACT.TTF');
 }

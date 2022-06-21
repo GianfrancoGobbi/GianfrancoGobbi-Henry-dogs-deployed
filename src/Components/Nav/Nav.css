@@ -15,12 +15,17 @@
 .nav-title {
     font-family: Impact;
     font-size: 1.5rem;
-    }
+}
 
-.navlink{
+.navlink {
     text-decoration: underline;
-     color: black;
+    color: black;
     font-family: Impact;
-  text-decoration-color: #9ecace;
- font-size: 1.5rem;
+    text-decoration-color: #9ecace;
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: Impact;
+    src: url('../../../public/IMPACT.TTF');
 }

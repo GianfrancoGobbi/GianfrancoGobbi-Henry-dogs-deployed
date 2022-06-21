@@ -155,11 +155,23 @@ export function Home() {
   }
 
   //////////////////// PAGINACION ////////////////////
+
+  function scrollUp(){
+
+    var currentScroll = document.documentElement.scrollTop;
+
+    if (currentScroll > 0){
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo (0, currentScroll - (currentScroll / 10));
+    }
+}
+
   const siguiente = () => {
     if (sumador2 >= alldogs.length) { } //si llega al final, no hace nada
     else {                              //si no llega al final, suma 8 y actualiza el estado
       setSumador(sumador + elemento);
       setSumador2(sumador2 + elemento);
+      scrollUp();
     }
   }
   const anterior = () => {
@@ -167,7 +179,9 @@ export function Home() {
     else {                               //si no llega al inicio, resta 8 y actualiza el estado
       setSumador(sumador - elemento);
       setSumador2(sumador2 - elemento);
+      scrollUp();
     }
+
   }
 
   //////////////////// ELEMENTOS A RENDERIZAR ////////////////////
