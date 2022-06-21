@@ -46,6 +46,8 @@ export function Home() {
   const handleChange = e => {
     setBusqueda(e.target.value);
     filtrar(e.target.value);
+    setSumador(0)
+    setSumador2(elemento)
   }
 
   //////////////////// FILTRO POR ALFABETO ////////////////////
@@ -59,7 +61,6 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-        // a must be equal to b
         return 0;
       })
     } else {
@@ -71,8 +72,7 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-        // a must be equal to b
-        return 0;
+         return 0;
 
       })
     }
@@ -85,8 +85,7 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-        // a must be equal to b
-        return 0;
+         return 0;
       })
     } else {
       setAlfabetic(!alfabetic)
@@ -97,8 +96,7 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-        // a must be equal to b
-        return 0;
+          return 0;
 
       })
     }
@@ -265,6 +263,7 @@ export function Home() {
               temperament={dog.temperament} />
             );
           })}
+          {(perrosfiltrados.length === 0) && <label> No encontramos coincidencias </label>          }
         </div>
 
         <div className="home-paginado">
