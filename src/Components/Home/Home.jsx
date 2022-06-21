@@ -72,7 +72,7 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-         return 0;
+        return 0;
 
       })
     }
@@ -85,7 +85,7 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-         return 0;
+        return 0;
       })
     } else {
       setAlfabetic(!alfabetic)
@@ -96,7 +96,7 @@ export function Home() {
         if (a.name < b.name) {
           return -1;
         }
-          return 0;
+        return 0;
 
       })
     }
@@ -154,15 +154,15 @@ export function Home() {
 
   //////////////////// PAGINACION ////////////////////
 
-  function scrollUp(){
+  function scrollUp() {
 
     var currentScroll = document.documentElement.scrollTop;
 
-    if (currentScroll > 0){
-        window.requestAnimationFrame(scrollUp);
-        window.scrollTo (0, currentScroll - (currentScroll / 10));
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(scrollUp);
+      window.scrollTo(0, currentScroll - (currentScroll / 10));
     }
-}
+  }
 
   const siguiente = () => {
     if (sumador2 >= alldogs.length) { } //si llega al final, no hace nada
@@ -263,13 +263,13 @@ export function Home() {
               temperament={dog.temperament} />
             );
           })}
-          {(perrosfiltrados.length === 0) && <label> No encontramos coincidencias </label>          }
+          {(perrosfiltrados.length === 0 && busqueda.length > 0) && <label> No encontramos coincidencias </label>}
         </div>
 
         <div className="home-paginado">
-          <div>Pagina</div>
+          <div>Pagina {sumador2/elemento }</div>
           <button className='home-btn' onClick={anterior}>Anterior</button>
-          <button className='home-btn' onClick={siguiente}>Siguiente</button>
+          {(sumador2 < (perrosfiltrados.length || alldogs.length)) && <button className='home-btn' onClick={siguiente}>Siguiente</button>}
         </div>
 
       </div>
